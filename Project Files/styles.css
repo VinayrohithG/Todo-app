@@ -1,0 +1,90 @@
+/* Add some padding to the body */
+body {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(110deg, rgb(10, 10, 10) 60%, rgb(43, 43, 43) 60%);
+}
+
+
+
+/* Center the card and adjust its width */
+.card {
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid ;
+  box-shadow: 5px 10px;
+  background-color: rgb(148, 145, 145);
+}
+
+/* Style the To-Do list items */
+.input-group {
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(148, 145, 145);
+}
+.task-item {
+  cursor: pointer;
+  padding: 1px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(148, 145, 145);
+  
+}
+
+/* Style the completed To-Do list items */
+.task-item.completed {
+  background-color: rgb(194, 254, 194);
+  color: green;
+}
+
+/* Center the buttons within the container */
+.float-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the Clear All button */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  width: 25%;
+  transition: transform 0.2s ease-in-out;
+  font-size: 14px; /* Add this to reduce the font size */
+}
+
+/* Completed Tasks Section */
+.completed-tasks {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color:rgb(149, 147, 147);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px 1000px;
+}
+
+.completed-tasks.show {
+  display: block;
+}
+
+/* Style the Completed Tasks heading */
+.completed-tasks h4 {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Style the Completed Tasks list container */
+.completed-tasks-container {
+  max-height: 300px;
+  overflow-y: auto;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
